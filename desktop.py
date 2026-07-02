@@ -29,7 +29,7 @@ st.sidebar.markdown("---")
 
 # Progi dla Gold-Silver Ratio
 st.sidebar.subheader("📊 Progi dla Gold-Silver Ratio (GSR)")
-gsr_low = st.sidebar.slider("Niski próg GSR (Kupuj Złoto):", min_value=40, max_value=100, value=65)
+gsr_low = st.sidebar.slider("Niski próg GSR (Kupuj Złoto):", min_value=40, max_value=100, value=60)
 gsr_high = st.sidebar.slider("Wysoki próg GSR (Kupuj Srebro):", min_value=40, max_value=100, value=80)
 
 st.sidebar.markdown("---")
@@ -37,7 +37,7 @@ st.sidebar.markdown("---")
 # Progi dla BTC / Gold Ratio
 st.sidebar.subheader("₿ Progi dla BTC / Gold Ratio")
 btc_gold_low = st.sidebar.slider("Niski próg BTC/Gold (Kupuj BTC):", min_value=5, max_value=50, value=15)
-btc_gold_high = st.sidebar.slider("Wysoki próg BTC/Gold (Kupuj Złoto):", min_value=5, max_value=50, value=25)
+btc_gold_high = st.sidebar.slider("Wysoki próg BTC/Gold (Kupuj Złoto):", min_value=5, max_value=50, value=40)
 
 # --- POBIERANIE DANYCH Z YAHOO FINANCE ---
 @st.cache_data(ttl=3600)  # Dane będą zapisane w pamięci podręcznej przez 1 godzinę
