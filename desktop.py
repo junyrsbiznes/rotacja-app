@@ -96,7 +96,7 @@ with st.spinner("🔄 Pobieranie najświeższych danych rynkowych z Yahoo Financ
             
             with sig_col1:
                 st.markdown("### **Strategia Metali (GSR)**")
-                if current_gsr >= ghr_high := gsr_high:
+                if current_gsr >= gsr_high:
                     st.success(f"📈 **Sygnał: KUPUJ SREBRO.** Wskaźnik GSR ({current_gsr:.2f}) jest powyżej progu {gsr_high}. Srebro jest historycznie tanie względem złota.")
                 elif current_gsr <= gsr_low:
                     st.warning(f"📉 **Sygnał: KUPUJ ZŁOTO.** Wskaźnik GSR ({current_gsr:.2f}) jest poniżej progu {gsr_low}. Złoto jest historycznie tanie względem srebra.")
